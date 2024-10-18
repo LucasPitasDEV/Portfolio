@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Lucas Pitas Baptista</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -261,65 +265,96 @@
     </script>
     
 
-    <!-- Projects Section -->
-    <section class="project-section">
-        <div class="container">
-            <h2>Principais Projetos</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Sistema de Controle de Atendimento e Vendas (SCAVE)</h5>
-                            <p class="card-text">
-                                Desenvolvimento do SCAVE, acessado por meio de aplicação web, utilizando Java e JavaScript. 
-                                O sistema segue o padrão Model-View-Controller (MVC) e armazena dados em PostgreSQL, 
-                                integrando APIs REST para um gerenciamento eficiente das informações.
-                            </p>
-                        </div>
+<!-- Projects Section -->
+<section class="project-section">
+    <div class="container">
+        <h2>Principais Projetos</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa fa-chart-line"></i> Sistema de Pesquisa de Satisfação e Plano de Ação</h5>
+                        <p class="card-text">
+                            Desenvolvimento de um sistema de <b>pesquisa de satisfação</b> para avaliação de áreas e serviços, 
+                            com um mecanismo automatizado que gera <b>planos de ação</b> para áreas com baixa performance. 
+                            As áreas são notificadas automaticamente e acompanham a execução dos planos dentro do próprio sistema. 
+                            A solução foi implementada utilizando <b>ASP.NET Core</b> e <b>SQL Server</b>, integrando módulos de relatórios e gráficos para análise.
+                        </p>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Ô Moto</h5>
-                            <p class="card-text">
-                                Aplicativo desenvolvido para otimizar a experiência do usuário no transporte coletivo, 
-                                proporcionando informações em tempo real sobre horários, trajeto e valores de passagens. 
-                                O foco é reduzir atrasos e melhorar a acessibilidade ao transporte público.
-                            </p>
-                        </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa fa-cogs"></i> Sistema de Integração de Gestão</h5>
+                        <p class="card-text">
+                            Desenvolvimento de um <b>sistema de integração</b> para unificar e sincronizar dados de diferentes sistemas de gestão, 
+                            como <b>Senior</b>, <b>Qualiex</b>, <b>Totvs</b> e <b>MKData</b>. A integração foi realizada utilizando <b>Pentaho</b>, conectando <b>APIs RESTful</b> 
+                            e diferentes bancos de dados, incluindo <b>Progress</b>, <b>SQL Server</b> e <b>Oracle</b>. 
+                            O sistema garante o fluxo contínuo de informações, consistência de dados e redução de retrabalhos nos processos de gestão. 
+                            O projeto incluiu <b>monitoramento de logs</b> e verificações automáticas para assegurar a confiabilidade das transações entre os sistemas.
+                        </p>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Depois da Escola</h5>
-                            <p class="card-text">
-                                Sistema educacional que visa facilitar o acesso a conteúdos escolares, 
-                                oferecendo uma plataforma online para estudantes. 
-                                O projeto utiliza PHP, MySQL e JavaScript, promovendo uma aprendizagem acessível e inovadora.
-                            </p>
-                        </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa fa-shopping-cart"></i> Sistema de Controle de Atendimento e Vendas (SCAVE)</h5>
+                        <p class="card-text">
+                            Desenvolvimento do <b>SCAVE</b>, acessado por meio de aplicação web, utilizando <b>Java</b> e <b>JavaScript</b>. 
+                            O sistema segue o padrão <b>Model-View-Controller (MVC)</b> e armazena dados em <b>PostgreSQL</b>, 
+                            integrando <b>APIs REST</b> para um gerenciamento eficiente das informações.
+                        </p>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Smart Mirror</h5>
-                            <p class="card-text">
-                                Desenvolvimento de um espelho inteligente que exibe informações úteis, 
-                                permitindo multitarefas de forma “hands-free”. O projeto utiliza tecnologia de IoT 
-                                e é uma combinação de software e hardware.
-                            </p>
-                        </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa fa-bicycle"></i> Ô Moto</h5>
+                        <p class="card-text">
+                            Aplicativo desenvolvido para <b>otimizar a experiência do usuário no transporte coletivo</b>, 
+                            proporcionando informações em tempo real sobre horários, trajeto e valores de passagens. 
+                            O foco é reduzir atrasos e melhorar a acessibilidade ao transporte público.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa fa-book-open"></i> Depois da Escola</h5>
+                        <p class="card-text">
+                            Sistema educacional que visa facilitar o acesso a conteúdos escolares, 
+                            oferecendo uma plataforma online para estudantes. 
+                            O projeto utiliza <b>PHP</b>, <b>MySQL</b> e <b>JavaScript</b>, promovendo uma aprendizagem acessível e inovadora.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fa fa-microchip"></i> Smart Mirror</h5>
+                        <p class="card-text">
+                            <b>Desenvolvimento de um espelho inteligente que exibe informações úteis</b>, 
+                            permitindo multitarefas de forma “<b>hands-free</b>”. O projeto utiliza tecnologia de <b>IoT</b> 
+                            e é uma combinação de software e hardware.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
 <!-- Licenças e Certificados Section -->
 <section class="certificates-section">
     <div class="container">
