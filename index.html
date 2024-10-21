@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Lucas Pitas Baptista</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="alvo.gif" type="image/x-icon">
+    <!-- Bootstrap e jQuery (necessários para o funcionamento do carrossel) -->
+
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .project-section img {
+    width: 100%; /* Define a largura da imagem para ocupar 100% do espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 200px; /* Define uma altura máxima para a imagem */
+    object-fit: contain; /* Ajusta a imagem para caber no contêiner sem cortar */
+}
+
+
+        /* Estilo base dos cards */
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para o plano de fundo e seções */
+        .background-section {
+            background: linear-gradient(to right, #00995d, #00401a);
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .background-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .background-section p {
+            font-size: 1.2rem;
+        }
+
+        /* Seção Sobre Mim */
+        .profile-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para as competências e experiência */
+        .competencies-section,
+        .experience-section,
+        .projects-section,
+        .contact-section {
+            padding: 50px 0;
+        }
+
+        /* Seção de redes sociais */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #00995d;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f47920;
+        }
+
+        b{
+            color: #036940;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Seção de Introdução com Plano de Fundo -->
+    <section class="background-section">
+        <h1>Lucas Pitas Baptista</h1>
+        <p>Desenvolvedor Full Stack | ASP .NET Core | C# | SQL Server | Pentaho PDI | Entusiasta de AI</p>
+    </section>
+
+  <!-- Sobre Mim -->
+<section class="container profile-section text-center">
+    <div class="card p-4">
+        <img src="img/1671675418930.jpeg" alt="Foto de Lucas Pitas Baptista" class="profile-img mx-auto d-block rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+        <h2>Sobre Mim</h2>
+        <p>
+            Com formação na FATEC de Lins como tecnólogo, desenvolvi habilidades em raciocínio lógico e identificação de falhas. 
+            Atualmente, na Unimed Araraquara, atuo como desenvolvedor web aplicando minhas habilidades técnicas em sistemas médicos.
+        </p>
+    </div>
+</section>
+
+    <!-- Competências -->
+    <section class="container competencies-section">
+        <h2 class="text-center">Principais Competências</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <h5>SQL</h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <h5>C#</h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <h5>.NET Framework</h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <h5>Pentaho</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiência Profissional -->
+    <section class="container experience-section">
+        <h2 class="text-center">Experiência Profissional</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <div class="text-center mb-3">
+                        <img src="img/Logo Pequeno.png" alt="Unimed" width="30%">
+                    </div>
+                    <h5>Unimed Araraquara</h5>
+                    <p>
+                        Analista de Desenvolvimento Web Júnior - Full Stack<br>
+                        jan de 2023 - o momento · <span id="unimed-experience"></span><br>
+                        Araraquara, SP
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <div class="text-center mb-3">
+                        <img src="img/Logotipo_da_JBS_(2023).png" alt="JBS" width="30%">
+                    </div>
+                    <h5>JBS Engenharia Corporativa</h5>
+                    <p>
+                        Aprendiz<br>
+                        mar de 2021 - jan de 2023 · <span id="jbs-experience"></span><br>
+                        Lins, SP
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Principais Projetos -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="text-center">Principais Projetos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-chart-line"></i> Sistema de Pesquisa de Satisfação e Plano de Ação</h5>
+                            <p class="card-text">
+                                Desenvolvimento de um sistema de <b>pesquisa de satisfação</b> para avaliação de áreas e serviços, 
+                                com um mecanismo automatizado que gera <b>planos de ação</b> para áreas com baixa performance. 
+                                A solução foi implementada utilizando <b>ASP.NET Core</b> e <b>SQL Server</b>, integrando módulos de relatórios e gráficos para análise.
+                            </p>
+                        </div>
+                        <!-- <img src="img/sistema-pesquisa.jpg" alt="Sistema de Pesquisa de Satisfação" class="card-img-bottom"> -->
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-cogs"></i> Sistema de Integração de Gestão</h5>
+                            <p class="card-text">
+                                Desenvolvimento de um <b>sistema de integração</b> para unificar e sincronizar dados de diferentes sistemas de gestão, 
+                                como <b>Senior</b>, <b>Qualiex</b>, <b>Totvs</b> e <b>MKData</b>. A integração foi realizada utilizando <b>Pentaho</b>, conectando <b>APIs RESTful</b> 
+                                e diferentes bancos de dados, como <b>Progress</b>, <b>SQL Server</b> e <b>Oracle</b>. O sistema garante o fluxo contínuo de informações.
+                            </p>
+                        </div>
+                        <!-- <img src="img/sistema-integracao.jpg" alt="Sistema de Integração de Gestão" class="card-img-bottom"> -->
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-shopping-cart"></i> Sistema de Controle de Atendimento e Vendas (SCAVE)</h5>
+                            <p class="card-text">
+                                Desenvolvimento do <b>SCAVE</b>, acessado por meio de aplicação web, utilizando <b>Java</b> e <b>JavaScript</b>. 
+                                O sistema segue o padrão <b>MVC</b> e armazena dados em <b>PostgreSQL</b>, integrando <b>APIs REST</b>.
+                            </p>
+                        </div>
+                        <!-- <img src="img/scave.jpg" alt="Sistema de Controle de Atendimento e Vendas" class="card-img-bottom"> -->
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-bicycle"></i> Ô Moto</h5>
+                            <p class="card-text">
+                                Aplicativo desenvolvido para <b>otimizar a experiência do usuário no transporte coletivo</b>, 
+                                proporcionando informações em tempo real sobre horários, trajetos e valores. 
+                            </p>
+                        </div>
+                        <!-- <img src="img/omoto.jpg" alt="Ô Moto" class="card-img-bottom"> -->
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-gamepad"></i> Jogo - Laziness</h5>
+                            <p class="card-text">
+                                Um jogo desenvolvido durante a pandemia, no qual o jogador deve escapar dos fantasmas da preguiça enquanto trabalha em home office. 
+                                Desenvolvido com <b>Java - POO</b>.
+                            </p>
+                        </div>
+                        <!-- <img src="img/Laziness.png" alt="Jogo - Laziness" class="card-img-bottom"> -->
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-book-open"></i> Depois da Escola</h5>
+                            <p class="card-text">
+                                Sistema educacional que visa facilitar o acesso a conteúdos escolares, 
+                                utilizando <b>PHP</b>, <b>MySQL</b> e <b>JavaScript</b>.
+                            </p>
+                        </div>
+                        <!-- <img src="img/depois-da-escola.jpg" alt="Depois da Escola" class="card-img-bottom"> -->
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa fa-microchip"></i> Smart Mirror</h5>
+                            <p class="card-text">
+                                <b>Desenvolvimento de um espelho inteligente</b> que exibe informações úteis e permite multitarefas, utilizando tecnologia de <b>IoT</b>.
+                            </p>
+                        </div>
+                        <!-- <img src="img/smart-mirror.jpg" alt="Smart Mirror" class="card-img-bottom"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- Contato -->
+    <section class="container contact-section">
+        <div class="card p-4 text-center">
+            <h2>Contato</h2>
+            <p>E-mail: pitas.contato@gmail.com</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/lucaspitas/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/LucasPitasDEV"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script>
+    // Função para calcular a experiência
+    function calcularExperiencia(startYear, startMonth, endYear, endMonth) {
+        const now = endYear ? new Date(endYear, endMonth - 1) : new Date();
+        const currentYear = now.getFullYear();
+        const currentMonth = now.getMonth() + 1; // Os meses em JavaScript são baseados em 0, então adicionamos 1.
+
+        let years = currentYear - startYear;
+        let months = currentMonth - startMonth;
+
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        return `${years} ano${years !== 1 ? 's' : ''} e ${months} mês${months !== 1 ? 'es' : ''}`;
+    }
+
+    // Atualiza a experiência na Unimed Araraquara
+    document.getElementById("unimed-experience").textContent = calcularExperiencia(2023, 1);
+
+    // Atualiza a experiência na JBS
+    document.getElementById("jbs-experience").textContent = calcularExperiencia(2021, 3, 2023, 1);
+</script>
+
+</html>
