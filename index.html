@@ -159,205 +159,366 @@
             <li class="nav-item"><a class="nav-link" onclick="showSection('contato')">Contato</a></li>
         </ul>
         <div class="language-selector d-flex align-items-center">
-            <img src="https://flagcdn.com/w40/br.png" alt="Português" title="Português" onclick="setLanguage('pt')" />
-            <img src="https://flagcdn.com/w40/us.png" alt="Inglês" title="Inglês" onclick="setLanguage('en')" />
-            <img src="https://flagcdn.com/w40/es.png" alt="Espanhol" title="Espanhol" onclick="setLanguage('es')" />
+<img src="https://flagcdn.com/w40/br.png" alt="Português" title="Português" onclick="setLanguage('pt')" />
+<img src="https://flagcdn.com/w40/us.png" alt="Inglês" title="Inglês" onclick="setLanguage('en')" />
+<img src="https://flagcdn.com/w40/es.png" alt="Espanhol" title="Espanhol" onclick="setLanguage('es')" />
+
         </div>
     </nav>
 
     <!-- Seção de Introdução com Plano de Fundo -->
     <section class="background-section">
         <h1>Lucas Pitas Baptista</h1>
-        <p>Desenvolvedor Full Stack | ASP .NET Core | C# | SQL Server | Pentaho PDI | Entusiasta de AI</p>
+        <p class="lang" data-lang="pt">Desenvolvedor Full Stack | ASP .NET Core | C# | SQL Server | xUnit | Integração e entrega contínuas (CI/CD)</p>
+<p class="lang d-none" data-lang="en">Full Stack Developer | ASP .NET Core | C# | SQL Server | xUnit | Continuous Integration and Delivery (CI/CD)</p>
+<p class="lang d-none" data-lang="es">Desarrollador Full Stack | ASP .NET Core | C# | SQL Server | xUnit | Integración y entrega continuas (CI/CD)</p>
+
     </section>
 
-    <!-- Sobre Mim -->
-    <section id="sobre" class="container profile-section page active">
-        <div class="card p-4">
-            <img src="img/1671675418930.jpeg" alt="Foto de Lucas Pitas Baptista"
-                class="profile-img mx-auto d-block rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
-            <h2>Sobre Mim</h2>
-            <p>
-                Sou desenvolvedor Full Stack com formação na FATEC de Lins (Tecnólogo em Análise e Desenvolvimento de
-                Sistemas). Tenho experiência prática em projetos web e integrações, aplicando tecnologias como C#,
-                ASP.NET Core, SQL Server e Pentaho PDI. Atualmente, atuo como Programador Web Pleno na Moovefy, com foco em soluções para CRM e plataformas B2B.
-                Minha missão é criar sistemas eficientes que conectem negócios e otimizem processos.
-            </p>
+<!-- Sobre Mim -->
+<section id="sobre" class="container profile-section page active">
+    <div class="card p-4">
+        <img src="img/1671675418930.jpeg" alt="Foto de Lucas Pitas Baptista"
+            class="profile-img mx-auto d-block rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+        
+        <h2>
+          <span class="lang" data-lang="pt">Sobre Mim</span>
+          <span class="lang d-none" data-lang="en">About Me</span>
+          <span class="lang d-none" data-lang="es">Sobre Mí</span>
+        </h2>
+        <p>
+          <span class="lang" data-lang="pt">
+            Sou desenvolvedor Full Stack com formação na FATEC de Lins (Tecnólogo em Análise e Desenvolvimento de Sistemas). Tenho experiência prática em projetos web e integrações, aplicando tecnologias como C#, ASP.NET Core, SQL Server e Pentaho PDI. Atualmente, atuo como Programador Web Pleno na Moovefy, com foco em soluções para CRM e plataformas B2B. Minha missão é criar sistemas eficientes que conectem negócios e otimizem processos.
+          </span>
+          <span class="lang d-none" data-lang="en">
+            I am a Full Stack developer graduated from FATEC de Lins (Technologist in Systems Analysis and Development). I have hands-on experience in web projects and integrations, applying technologies such as C#, ASP.NET Core, SQL Server, and Pentaho PDI. Currently, I work as a Web Programmer at Moovefy, focusing on CRM and B2B platform solutions. My mission is to create efficient systems that connect businesses and optimize processes.
+          </span>
+          <span class="lang d-none" data-lang="es">
+            Soy desarrollador Full Stack graduado en FATEC de Lins (Tecnólogo en Análisis y Desarrollo de Sistemas). Tengo experiencia práctica en proyectos web e integraciones, aplicando tecnologías como C#, ASP.NET Core, SQL Server y Pentaho PDI. Actualmente trabajo como Programador Web en Moovefy, enfocado en soluciones para CRM y plataformas B2B. Mi misión es crear sistemas eficientes que conecten negocios y optimicen procesos.
+          </span>
+        </p>
+    </div>
+
+    <!-- Competências -->
+    <section class="competencies-section">
+        <h2 class="text-center">
+          <span class="lang" data-lang="pt">Principais Competências</span>
+          <span class="lang d-none" data-lang="en">Main Skills</span>
+          <span class="lang d-none" data-lang="es">Principales Competencias</span>
+        </h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <h5>
+                      <span class="lang" data-lang="pt">ASP.NET / .NET Framework / .NET Core</span>
+                      <span class="lang d-none" data-lang="en">ASP.NET / .NET Framework / .NET Core</span>
+                      <span class="lang d-none" data-lang="es">ASP.NET / .NET Framework / .NET Core</span>
+                    </h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <h5>
+                      <span class="lang" data-lang="pt">SQL</span>
+                      <span class="lang d-none" data-lang="en">SQL</span>
+                      <span class="lang d-none" data-lang="es">SQL</span>
+                    </h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <h5>
+                      <span class="lang" data-lang="pt">Integração e entrega contínuas (CI/CD)</span>
+                      <span class="lang d-none" data-lang="en">Continuous Integration and Delivery (CI/CD)</span>
+                      <span class="lang d-none" data-lang="es">Integración y entrega continuas (CI/CD)</span>
+                    </h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-4">
+                    <h5>xUnit</h5>
+                </div>
+            </div>
         </div>
-
-        <!-- Competências -->
-        <section class="competencies-section">
-            <h2 class="text-center">Principais Competências</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <div class="card p-4">
-                        <h5>ASP.NET / .NET Framework / .NET Core</h5>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card p-4">
-                        <h5>SQL</h5>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card p-4">
-                        <h5>Integração e entrega contínuas (CI/CD)</h5>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card p-4">
-                        <h5>xUnit</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experiência Profissional -->
-        <section class="experience-section mt-5">
-            <h2 class="text-center">Experiência Profissional</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <div class="text-center mb-3">
-                            <img src="img/logo-moovefy.png" alt="Moovefy" width="40%" />
-                        </div>
-                        <h5>Moovefy</h5>
-                        <p>
-                            Programador Web Pleno - Full Stack<br />
-                            nov de 2024 - o momento · <span id="moovefy-experience"></span><br />
-                            São Paulo, SP
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <div class="text-center mb-3">
-                            <img src="img/Logo Pequeno.png" alt="Unimed" width="40%" />
-                        </div>
-                        <h5>Unimed Araraquara</h5>
-                        <p>
-                            Analista de Desenvolvimento Web Júnior - Full Stack<br />
-                            jan de 2023 - nov de 2024 · <span id="unimed-experience"></span><br />
-                            Araraquara, SP
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card p-4">
-                        <div class="text-center mb-3">
-                            <img src="img/Logotipo_da_JBS_(2023).png" alt="JBS" width="40%" />
-                        </div>
-                        <h5>JBS Engenharia Corporativa</h5>
-                        <p>
-                            Aprendiz<br />
-                            mar de 2021 - jan de 2023 · <span id="jbs-experience"></span><br />
-                            Lins, SP
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </section>
 
-    <!-- Projetos -->
-    <section id="projetos" class="container projects-section page">
-        <h2 class="text-center">Principais Projetos</h2>
+    <!-- Experiência Profissional -->
+    <section class="experience-section mt-5">
+        <h2 class="text-center">
+          <span class="lang" data-lang="pt">Experiência Profissional</span>
+          <span class="lang d-none" data-lang="en">Professional Experience</span>
+          <span class="lang d-none" data-lang="es">Experiencia Profesional</span>
+        </h2>
         <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa fa-chart-line"></i> Sistema de Pesquisa de Satisfação e Plano de Ação</h5>
-                        <p class="card-text">
-                            Desenvolvimento de um sistema de <b>pesquisa de satisfação</b> para avaliação de áreas e serviços,
-                            com um mecanismo automatizado que gera <b>planos de ação</b> para áreas com baixa performance.
-                            A solução foi implementada utilizando <b>ASP.NET Core</b> e <b>SQL Server</b>, integrando módulos de relatórios e gráficos para análise.
-                        </p>
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <div class="text-center mb-3">
+                        <img src="img/logo-moovefy.png" alt="Moovefy" width="40%" />
                     </div>
+                    <h5>Moovefy</h5>
+                    <p>
+                      <span class="lang" data-lang="pt">
+                        Programador Web Pleno - Full Stack<br />
+                        nov de 2024 - o momento · <span id="moovefy-experience"></span><br />
+                        São Paulo, SP
+                      </span>
+                      <span class="lang d-none" data-lang="en">
+                        Mid-level Web Programmer - Full Stack<br />
+                        Nov 2024 - Present · <span id="moovefy-experience-en"></span><br />
+                        São Paulo, SP
+                      </span>
+                      <span class="lang d-none" data-lang="es">
+                        Programador Web Medio - Full Stack<br />
+                        Nov 2024 - Presente · <span id="moovefy-experience-es"></span><br />
+                        São Paulo, SP
+                      </span>
+                    </p>
                 </div>
             </div>
-
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa fa-cogs"></i> Sistema de Integração de Gestão</h5>
-                        <p class="card-text">
-                            Desenvolvimento de um <b>sistema de integração</b> para unificar e sincronizar dados de diferentes sistemas de gestão,
-                            como <b>Senior</b>, <b>Qualiex</b>, <b>Totvs</b> e <b>MKData</b>. A integração foi realizada utilizando <b>Pentaho</b>, conectando <b>APIs RESTful</b>
-                            e diferentes bancos de dados, como <b>Progress</b>, <b>SQL Server</b> e <b>Oracle</b>. O sistema garante o fluxo contínuo de informações.
-                        </p>
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <div class="text-center mb-3">
+                        <img src="img/Logo Pequeno.png" alt="Unimed" width="40%" />
                     </div>
+                    <h5>Unimed Araraquara</h5>
+                    <p>
+                      <span class="lang" data-lang="pt">
+                        Analista de Desenvolvimento Web Júnior - Full Stack<br />
+                        jan de 2023 - nov de 2024 · <span id="unimed-experience"></span><br />
+                        Araraquara, SP
+                      </span>
+                      <span class="lang d-none" data-lang="en">
+                        Junior Web Development Analyst - Full Stack<br />
+                        Jan 2023 - Nov 2024 · <span id="unimed-experience-en"></span><br />
+                        Araraquara, SP
+                      </span>
+                      <span class="lang d-none" data-lang="es">
+                        Analista de Desarrollo Web Junior - Full Stack<br />
+                        Ene 2023 - Nov 2024 · <span id="unimed-experience-es"></span><br />
+                        Araraquara, SP
+                      </span>
+                    </p>
                 </div>
             </div>
-
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa fa-shopping-cart"></i> Sistema de Controle de Atendimento e Vendas (SCAVE)</h5>
-                        <p class="card-text">
-                            Desenvolvimento do <b>SCAVE</b>, acessado por meio de aplicação web, utilizando <b>Java</b> e <b>JavaScript</b>.
-                            O sistema segue o padrão <b>MVC</b> e armazena dados em <b>PostgreSQL</b>, integrando <b>APIs REST</b>.
-                        </p>
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <div class="text-center mb-3">
+                        <img src="img/Logotipo_da_JBS_(2023).png" alt="JBS" width="40%" />
                     </div>
+                    <h5>JBS Engenharia Corporativa</h5>
+                    <p>
+                      <span class="lang" data-lang="pt">
+                        Aprendiz<br />
+                        mar de 2021 - jan de 2023 · <span id="jbs-experience"></span><br />
+                        Lins, SP
+                      </span>
+                      <span class="lang d-none" data-lang="en">
+                        Apprentice<br />
+                        Mar 2021 - Jan 2023 · <span id="jbs-experience-en"></span><br />
+                        Lins, SP
+                      </span>
+                      <span class="lang d-none" data-lang="es">
+                        Aprendiz<br />
+                        Mar 2021 - Ene 2023 · <span id="jbs-experience-es"></span><br />
+                        Lins, SP
+                      </span>
+                    </p>
                 </div>
             </div>
-
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa fa-bicycle"></i> Ô Moto</h5>
-                        <p class="card-text">
-                            Aplicativo desenvolvido para <b>otimizar a experiência do usuário no transporte coletivo</b>,
-                            proporcionando informações em tempo real sobre horários, trajetos e valores.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa fa-gamepad"></i> Jogo - Laziness</h5>
-                        <p class="card-text">
-                            Um jogo desenvolvido durante a pandemia, no qual o jogador deve escapar dos fantasmas da preguiça enquanto trabalha em home office.
-                            Desenvolvido com <b>Java - POO</b>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa fa-book-open"></i> Depois da Escola</h5>
-                        <p class="card-text">
-                            Sistema educacional que visa facilitar o acesso a conteúdos escolares,
-                            utilizando <b>PHP</b>, <b>MySQL</b> e <b>JavaScript</b>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa fa-microchip"></i> Smart Mirror</h5>
-                        <p class="card-text">
-                            <b>Desenvolvimento de um espelho inteligente</b> que exibe informações úteis e permite multitarefas, utilizando tecnologia de <b>IoT</b>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <a href="https://www.linkedin.com/in/lucaspitas/" target="_blank" class="mx-auto">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <button class="btn btn-white"><h4>Ver mais projetos</h4></button>
-                    </div>
-                </div>
-            </a>
         </div>
     </section>
+</section>
+
+<!-- Projetos -->
+<section id="projetos" class="container projects-section page">
+    <h2 class="text-center">
+      <span class="lang" data-lang="pt">Principais Projetos</span>
+      <span class="lang d-none" data-lang="en">Main Projects</span>
+      <span class="lang d-none" data-lang="es">Principales Proyectos</span>
+    </h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-chart-line"></i>
+                      <span class="lang" data-lang="pt">Sistema de Pesquisa de Satisfação e Plano de Ação</span>
+                      <span class="lang d-none" data-lang="en">Satisfaction Survey System and Action Plan</span>
+                      <span class="lang d-none" data-lang="es">Sistema de Encuesta de Satisfacción y Plan de Acción</span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang" data-lang="pt">
+                        Desenvolvimento de um sistema de <b>pesquisa de satisfação</b> para avaliação de áreas e serviços, com um mecanismo automatizado que gera <b>planos de ação</b> para áreas com baixa performance. A solução foi implementada utilizando <b>ASP.NET Core</b> e <b>SQL Server</b>, integrando módulos de relatórios e gráficos para análise.
+                      </span>
+                      <span class="lang d-none" data-lang="en">
+                        Development of a <b>satisfaction survey</b> system for evaluating areas and services, with an automated mechanism that generates <b>action plans</b> for low-performance areas. The solution was implemented using <b>ASP.NET Core</b> and <b>SQL Server</b>, integrating reporting and chart modules for analysis.
+                      </span>
+                      <span class="lang d-none" data-lang="es">
+                        Desarrollo de un sistema de <b>encuesta de satisfacción</b> para evaluar áreas y servicios, con un mecanismo automatizado que genera <b>planes de acción</b> para áreas de bajo rendimiento. La solución fue implementada usando <b>ASP.NET Core</b> y <b>SQL Server</b>, integrando módulos de reportes y gráficos para análisis.
+                      </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-cogs"></i>
+                      <span class="lang" data-lang="pt">Sistema de Integração de Gestão</span>
+                      <span class="lang d-none" data-lang="en">Management Integration System</span>
+                      <span class="lang d-none" data-lang="es">Sistema de Integración de Gestión</span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang" data-lang="pt">
+                        Desenvolvimento de um <b>sistema de integração</b> para unificar e sincronizar dados de diferentes sistemas de gestão, como <b>Senior</b>, <b>Qualiex</b>, <b>Totvs</b> e <b>MKData</b>. A integração foi realizada utilizando <b>Pentaho</b>, conectando <b>APIs RESTful</b> e diferentes bancos de dados, como <b>Progress</b>, <b>SQL Server</b> e <b>Oracle</b>. O sistema garante o fluxo contínuo de informações.
+                      </span>
+                      <span class="lang d-none" data-lang="en">
+                        Development of an <b>integration system</b> to unify and synchronize data from different management systems, such as <b>Senior</b>, <b>Qualiex</b>, <b>Totvs</b>, and <b>MKData</b>. Integration was done using <b>Pentaho</b>, connecting <b>RESTful APIs</b> and various databases like <b>Progress</b>, <b>SQL Server</b>, and <b>Oracle</b>. The system ensures continuous information flow.
+                      </span>
+                      <span class="lang d-none" data-lang="es">
+                        Desarrollo de un <b>sistema de integración</b> para unificar y sincronizar datos de diferentes sistemas de gestión, como <b>Senior</b>, <b>Qualiex</b>, <b>Totvs</b> y <b>MKData</b>. La integración se realizó utilizando <b>Pentaho</b>, conectando <b>APIs RESTful</b> y varias bases de datos como <b>Progress</b>, <b>SQL Server</b> y <b>Oracle</b>. El sistema garantiza un flujo continuo de información.
+                      </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-shopping-cart"></i>
+                      <span class="lang" data-lang="pt">Sistema de Controle de Atendimento e Vendas (SCAVE)</span>
+                      <span class="lang d-none" data-lang="en">Service and Sales Control System (SCAVE)</span>
+                      <span class="lang d-none" data-lang="es">Sistema de Control de Atención y Ventas (SCAVE)</span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang" data-lang="pt">
+                        Desenvolvimento do <b>SCAVE</b>, acessado por meio de aplicação web, utilizando <b>Java</b> e <b>JavaScript</b>. O sistema segue o padrão <b>MVC</b> e armazena dados em <b>PostgreSQL</b>, integrando <b>APIs REST</b>.
+                      </span>
+                      <span class="lang d-none" data-lang="en">
+                        Development of <b>SCAVE</b>, accessed via web application, using <b>Java</b> and <b>JavaScript</b>. The system follows the <b>MVC</b> pattern and stores data in <b>PostgreSQL</b>, integrating <b>REST APIs</b>.
+                      </span>
+                      <span class="lang d-none" data-lang="es">
+                        Desarrollo de <b>SCAVE</b>, accedido a través de aplicación web, usando <b>Java</b> y <b>JavaScript</b>. El sistema sigue el patrón <b>MVC</b> y almacena datos en <b>PostgreSQL</b>, integrando <b>APIs REST</b>.
+                      </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-bicycle"></i>
+                      <span class="lang" data-lang="pt">Ô Moto</span>
+                      <span class="lang d-none" data-lang="en">Ô Moto</span>
+                      <span class="lang d-none" data-lang="es">Ô Moto</span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang" data-lang="pt">
+                        Aplicativo desenvolvido para <b>otimizar a experiência do usuário no transporte coletivo</b>, proporcionando informações em tempo real sobre horários, trajetos e valores.
+                      </span>
+                      <span class="lang d-none" data-lang="en">
+                        App developed to <b>optimize user experience in public transportation</b>, providing real-time information about schedules, routes, and fares.
+                      </span>
+                      <span class="lang d-none" data-lang="es">
+                        Aplicación desarrollada para <b>optimizar la experiencia del usuario en el transporte público</b>, proporcionando información en tiempo real sobre horarios, rutas y tarifas.
+                      </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-gamepad"></i>
+                      <span class="lang" data-lang="pt">Jogo - Laziness</span>
+                      <span class="lang d-none" data-lang="en">Game - Laziness</span>
+                      <span class="lang d-none" data-lang="es">Juego - Laziness</span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang" data-lang="pt">
+                        Um jogo desenvolvido durante a pandemia, no qual o jogador deve escapar dos fantasmas da preguiça enquanto trabalha em home office. Desenvolvido com <b>Java - POO</b>.
+                      </span>
+                      <span class="lang d-none" data-lang="en">
+                        A game developed during the pandemic, where the player must escape the ghosts of laziness while working from home. Developed with <b>Java - OOP</b>.
+                      </span>
+                      <span class="lang d-none" data-lang="es">
+                        Un juego desarrollado durante la pandemia, donde el jugador debe escapar de los fantasmas de la pereza mientras trabaja desde casa. Desarrollado con <b>Java - POO</b>.
+                      </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-book-open"></i>
+                      <span class="lang" data-lang="pt">Depois da Escola</span>
+                      <span class="lang d-none" data-lang="en">After School</span>
+                      <span class="lang d-none" data-lang="es">Después de la Escuela</span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang" data-lang="pt">
+                        Sistema educacional que visa facilitar o acesso a conteúdos escolares, utilizando <b>PHP</b>, <b>MySQL</b> e <b>JavaScript</b>.
+                      </span>
+                      <span class="lang d-none" data-lang="en">
+                        Educational system aimed at facilitating access to school content, using <b>PHP</b>, <b>MySQL</b>, and <b>JavaScript</b>.
+                      </span>
+                      <span class="lang d-none" data-lang="es">
+                        Sistema educativo que busca facilitar el acceso a contenidos escolares, usando <b>PHP</b>, <b>MySQL</b> y <b>JavaScript</b>.
+                      </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                      <i class="fa fa-microchip"></i>
+                      <span class="lang" data-lang="pt">Smart Mirror</span>
+                      <span class="lang d-none" data-lang="en">Smart Mirror</span>
+                      <span class="lang d-none" data-lang="es">Espejo Inteligente</span>
+                    </h5>
+                    <p class="card-text">
+                      <span class="lang" data-lang="pt">
+                        <b>Desenvolvimento de um espelho inteligente</b> que exibe informações úteis e permite multitarefas, utilizando tecnologia de <b>IoT</b>.
+                      </span>
+                      <span class="lang d-none" data-lang="en">
+                        <b>Development of a smart mirror</b> that displays useful information and allows multitasking, using <b>IoT</b> technology.
+                      </span>
+                      <span class="lang d-none" data-lang="es">
+                        <b>Desarrollo de un espejo inteligente</b> que muestra información útil y permite multitareas, utilizando tecnología <b>IoT</b>.
+                      </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <a href="https://www.linkedin.com/in/lucaspitas/" target="_blank" class="mx-auto">
+            <div class="card">
+                <div class="card-body text-center">
+                    <button class="btn btn-white">
+                      <span class="lang" data-lang="pt">Ver mais projetos</span>
+                      <span class="lang d-none" data-lang="en">See more projects</span>
+                      <span class="lang d-none" data-lang="es">Ver más proyectos</span>
+                    </button>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
 
    <!-- Certificados -->
 <section id="certificados" class="container page" style="padding-bottom:50px;">
@@ -474,37 +635,43 @@
 </section>
 
 
-    <!-- Contato -->
-    <section id="contato" class="container contact-section page">
-        <div class="card p-4 text-center">
-            <h2>Contato</h2>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/lucaspitas/" target="_blank" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/LucasPitasDEV" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:pitas.contato@gmail.com" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
+<!-- Contato -->
+<section id="contato" class="container contact-section page">
+    <div class="card p-4 text-center">
+        <h2>
+          <span class="lang" data-lang="pt">Contato</span>
+          <span class="lang d-none" data-lang="en">Contact</span>
+          <span class="lang d-none" data-lang="es">Contacto</span>
+        </h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/lucaspitas/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/LucasPitasDEV" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:pitas.contato@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
-    </section>
-
-    <section id="curriculo" class="container page" style="padding-bottom: 50px;">
-    <h2 class="text-center mt-5 mb-4">Currículo</h2>
-    <!-- <div class="card p-4 mx-auto shadow-sm" style="max-width: 900px; border-radius: 15px; overflow: hidden;"> -->
-        <iframe 
-            src="https://lucaspitasdev.github.io/Curriculo/" 
-            style="width: 100%; height: 1200px; border: none; border-radius: 15px;" 
-            title="Currículo Lucas Pitas Baptista"
-            loading="lazy"
-            allowfullscreen
-        ></iframe>
-    <!-- </div> -->
+    </div>
 </section>
 
+   <!-- Currículo -->
+<section id="curriculo" class="container page" style="padding-bottom: 50px;">
+    <h2 class="text-center mt-5 mb-4">
+      <span class="lang" data-lang="pt">Currículo</span>
+      <span class="lang d-none" data-lang="en">Resume</span>
+      <span class="lang d-none" data-lang="es">Currículum</span>
+    </h2>
+    <iframe 
+        src="https://lucaspitasdev.github.io/Curriculo/" 
+        style="width: 100%; height: 1200px; border: none; border-radius: 15px;" 
+        title="Currículo Lucas Pitas Baptista"
+        loading="lazy"
+        allowfullscreen
+    ></iframe>
+</section>
 
     <!-- Bootstrap JS Bundle (com Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -558,6 +725,19 @@
         function setLanguage(lang) {
             alert('Mudança de idioma para "' + lang + '" ainda não implementada.');
         }
+
+        function setLanguage(lang) {
+  document.querySelectorAll('.lang').forEach(el => {
+    el.classList.add('d-none');
+  });
+  document.querySelectorAll(`.lang[data-lang="${lang}"]`).forEach(el => {
+    el.classList.remove('d-none');
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  setLanguage('pt'); // idioma padrão
+});
+
     </script>
 
 </body>
